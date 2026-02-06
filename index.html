@@ -4,7 +4,7 @@
    <meta charset="UTF-8"> 
    <title>Dashboard Cloud</title> 
    <style>
-        body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; }
+        body { margin: 0; font-family: sans-serif;}
         .contenedor { display: flex; gap: 20px; flex-wrap: wrap; }
 
         /* Estilos de las tarjetas */
@@ -21,15 +21,19 @@
         /* Colores para el estado */
         .activo { color: green; font-weight: bold; }
         .inactivo { color: red; font-weight: bold; } 
-   </style> 
+   </style>
+   <link rel="stylesheet" href="../main_page/style.css">
 </head> 
-<body> 
+<body>
+   <div id="header"></div>
    <h1>Mis Servicios en la Nube</h1> 
    <button onclick="cargarServicios()">Actualizar Estado</button> 
    <hr>
    
    <!-- Aquí se inyectarán las tarjetas dinámicamente --> 
-   <div id="contenedor-servicios" class="contenedor"></div> 
+   <div id="contenedor-servicios" class="contenedor"></div>
+   <div id="footer"></div>
    <script src="app.js"></script> 
+   <script src="../main_page/pantallas.js"></script>
 </body> 
 </html>
